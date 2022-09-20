@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<div>
+  <input
+    class="border-2 border-amber-900 m-5"
+    type="text"
+    value=""
+  />
+  <h1
+    data-testid="greeting"
+  />
+</div>
+`;

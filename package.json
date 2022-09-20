@@ -1,0 +1,53 @@
+{
+  "name": "nextjs-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "yarn eslint:check && yarn prettier:check && yarn stylelint:check",
+    "lint:fix": "yarn eslint:fix && yarn prettier:fix && yarn stylelint:fix",
+    "eslint:fix": "next lint --fix .",
+    "eslint:check": "next lint",
+    "stylelint:fix": "stylelint './**/*.{css,scss}' --fix --aei",
+    "stylelint:check": "stylelint './**/*.{css,scss}' --aei",
+    "prettier:fix": "prettier --write './**/*.{js,jsx}'",
+    "prettier:check": "prettier --check './**/*.{js,jsx}'",
+    "test": "jest",
+    "test:coverage": "jest --silent --coverage --coverageDirectory ../test-coverage"
+  },
+  "dependencies": {
+    "next": "12.1.2",
+    "next-seo": "^5.3.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.2.161",
+    "@swc/jest": "^0.2.20",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^14.0.0",
+    "autoprefixer": "^10.4.4",
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.2",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-testing-library": "^5.1.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "jest": "^27.5.1",
+    "jest-junit": "^13.0.0",
+    "postcss": "^8.4.12",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-nested": "^5.0.6",
+    "postcss-preset-env": "^7.4.3",
+    "postcss-scss": "^4.0.3",
+    "prettier": "^2.6.1",
+    "sass": "^1.49.9",
+    "stylelint": "^14.6.1",
+    "stylelint-config-standard": "^25.0.0",
+    "tailwindcss": "^3.0.23"
+  }
+}
